@@ -244,7 +244,12 @@ function ding_library_views_default_views() {
   $handler->display->display_options['fields']['field_ding_library_mail']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_ding_library_mail']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_ding_library_mail']['field_api_classes'] = 0;
-  /* Sort criterion: Content: Title */
+  /* Sort criterion: Indhold: Sticky */
+  $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
+  $handler->display->display_options['sorts']['sticky']['table'] = 'node';
+  $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
+  $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
+  /* Sort criterion: Indhold: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
