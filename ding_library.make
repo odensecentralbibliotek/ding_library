@@ -53,7 +53,7 @@ projects[og][patch][] = http://drupal.org/files/1320778.patch
 
 projects[openlayers][type] = module
 projects[openlayers][subdir] = contrib
-projects[openlayers][version] = "2.0-beta1"
+projects[openlayers][version] = "2.0-beta3"
 
 projects[strongarm][type] = module
 projects[strongarm][subdir] = contrib
