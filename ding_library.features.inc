@@ -30,7 +30,7 @@ function ding_library_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function ding_library_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -53,11 +53,11 @@ function ding_library_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '506',
+          'width' => 506,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -66,7 +66,7 @@ function ding_library_image_default_styles() {
   $styles['ding_library_header'] = array(
     'name' => 'ding_library_header',
     'effects' => array(
-      1 => array(
+      10 => array(
         'label' => 'Skalér og beskær',
         'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -76,10 +76,10 @@ function ding_library_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '710',
-          'height' => '208',
+          'width' => 676,
+          'height' => 214,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -88,21 +88,20 @@ function ding_library_image_default_styles() {
   $styles['ding_library_list'] = array(
     'name' => 'ding_library_list',
     'effects' => array(
-      2 => array(
-        'label' => 'Skalér',
-        'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
+      12 => array(
+        'label' => 'Skalér og beskær',
+        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
         'module' => 'image',
-        'name' => 'image_scale',
+        'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '140',
-          'height' => '140',
-          'upscale' => 0,
+          'width' => 140,
+          'height' => 150,
         ),
-        'weight' => '2',
+        'weight' => 1,
       ),
     ),
   );
@@ -118,7 +117,7 @@ function ding_library_node_info() {
     'ding_library' => array(
       'name' => t('Library'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Create a representation of a library / library branch'),
       'has_title' => '1',
       'title_label' => t('Navn'),
       'help' => '',

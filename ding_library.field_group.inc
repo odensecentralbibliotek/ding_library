@@ -57,6 +57,7 @@ function ding_library_field_group_info() {
       1 => 'field_ding_library_fax_number',
       2 => 'field_ding_library_mail',
       3 => 'field_ding_library_phone_number',
+      4 => 'field_ding_library_obs',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
