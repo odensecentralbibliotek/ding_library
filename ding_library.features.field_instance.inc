@@ -101,7 +101,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -126,6 +126,53 @@ function ding_library_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance: 'node-ding_library-field_ding_library_cvr'
+  $field_instances['node-ding_library-field_ding_library_cvr'] = array(
+    'bundle' => 'ding_library',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'teaser_highlight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ding_library_cvr',
+    'label' => 'CVR number',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
     ),
   );
 
@@ -196,7 +243,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -249,7 +296,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -295,7 +342,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -476,7 +523,7 @@ function ding_library_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -500,7 +547,7 @@ function ding_library_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -522,7 +569,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -615,7 +662,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -663,7 +710,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -736,7 +783,7 @@ function ding_library_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'teaser_highlight' => array(
         'label' => 'above',
@@ -780,6 +827,7 @@ function ding_library_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Addresse');
   t('Body');
+  t('CVR number');
   t('E-mail');
   t('Fax number');
   t('Geocode');
