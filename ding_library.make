@@ -65,7 +65,7 @@ projects[strongarm][version] = "2.0"
 
 projects[views][type] = module
 projects[views][subdir] = contrib
-projects[views][version] = "3.3"
+projects[views][version] = "3.8"
 
 libraries[openlayers][download][type] = get
 libraries[openlayers][download][url] = http://openlayers.org/download/OpenLayers-2.12.tar.gz
