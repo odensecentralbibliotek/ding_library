@@ -68,8 +68,8 @@ projects[views][subdir] = contrib
 projects[views][version] = "3.8"
 
 libraries[openlayers][download][type] = get
-libraries[openlayers][download][url] = http://openlayers.org/download/OpenLayers-2.13.tar.gz
-
+;libraries[openlayers][download][url] = http://openlayers.org/download/OpenLayers-2.13.tar.gz
+libraries[openlayers][download][url] = https://github.com/openlayers/ol3/releases/download/v3.0.0/v3.0.0.zip
 libraries[openlayers_themes][download][type] = git
 libraries[openlayers_themes][download][url] = git@github.com:developmentseed/openlayers_themes.git
 
