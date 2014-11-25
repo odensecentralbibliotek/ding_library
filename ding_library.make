@@ -30,7 +30,7 @@ projects[geophp][version] = "1.6"
 
 projects[geofield][type] = module
 projects[geofield][subdir] = contrib
-projects[geofield][version] = "1.1"
+projects[geofield][version] = "2.3"
 
 projects[libraries][type] = module
 projects[libraries][subdir] = contrib
