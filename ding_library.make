@@ -26,7 +26,7 @@ projects[geocoder][version] = "1.2"
 
 projects[geophp][type] = module
 projects[geophp][subdir] = contrib
-projects[geophp][version] = "1.6"
+projects[geophp][version] = "1.7"
 
 projects[geofield][type] = module
 projects[geofield][subdir] = contrib
