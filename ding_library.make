@@ -39,7 +39,7 @@ projects[libraries][version] = "1.0"
 
 projects[link][type] = module
 projects[link][subdir] = contrib
-projects[link][version] = "1.0"
+projects[link][version] = "1.3"
 
 projects[menu_block][type] = module
 projects[menu_block][subdir] = contrib
