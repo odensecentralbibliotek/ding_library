@@ -31,6 +31,7 @@ projects[geophp][version] = "1.7"
 projects[geofield][type] = module
 projects[geofield][subdir] = contrib
 projects[geofield][version] = "2.3"
+projects[geofield][patch][] = https://www.drupal.org/files/issues/geofield-ctools-failures-1889584-10.patch
 
 projects[libraries][type] = module
 projects[libraries][subdir] = contrib
