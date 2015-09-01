@@ -173,12 +173,13 @@ function ding_library_block_view($delta = '') {
                      'links' => $links,
                      'heading' => array(
                        'text' => $library['link_title'],
-                       'level' => 'h2',
+                       'level' => 'h1',
                      ),
                    )),
         '#prefix' => '<div class="library-menu clearfix">',
         '#suffix' => '</div>',
       );
+      $block['subject'] = $library['link_title'];
     }
   }
   if ($delta == 'ding_sidebar_menu') {
