@@ -16,7 +16,7 @@ function ding_library_menu_menu_alter(&$items) {
   }
   // When the menu structure is being rebuilt, we also want to create
   // our own links.
-  _ding_libary_menu_rebuild();
+  //Removed _ding_libary_menu_rebuild(); temporally because of recursion
 }
 
 /**
@@ -46,9 +46,9 @@ function ding_library_menu_node_update($node) {
  */
 function _ding_libary_menu_rebuild() {
   // Get the menu item we want as parent for our libraries.
-  // This should be provided by ding_library as the main list of libraries.
+  // This should be provided by ding_library as the main list of libraries.   
   $root_link = menu_link_get_preferred('libraries');
-
+  
   // Get the menu links we created previously, so we won't overwrite
   // user changes to title, etc.
   $existing_links = db_query("
